@@ -117,7 +117,7 @@ app.get('/req' , async (req,res)=>{
 	
 const url = "https://2000-01hzkq91ad81aw7qbwnsgv5z49.cloudspaces.litng.ai/";
 const duration = 5000; // Test duration in milliseconds
-const concurrency = 200; // Number of concurrent requests
+const concurrency = 20; // Number of concurrent requests
 
 let requestsSent = 0;
 let responsesReceived = 0;
@@ -130,7 +130,7 @@ async function sendRequest() {
     console.log(text);
     responsesReceived++;
   } catch (error) {
-    console.error("Error:");
+    console.error("Error:" + error);
   }
 }
 
