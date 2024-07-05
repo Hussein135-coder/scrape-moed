@@ -125,8 +125,8 @@ let responsesReceived = 0;
 async function sendRequest() {
   requestsSent++;
   try {
-    const response = await fetch(url);
-    const text = await response.text(); // Consume the body
+    const response = await axios.get(url);
+    const text = await response.data; // Consume the body
     console.log(text);
     responsesReceived++;
   } catch (error) {
