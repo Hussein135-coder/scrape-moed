@@ -117,7 +117,7 @@ app.get('/req' , async (req,res)=>{
 	
 const url = "https://2000-01hzkq91ad81aw7qbwnsgv5z49.cloudspaces.litng.ai/";
 const duration = 5000; // Test duration in milliseconds
-const concurrency = 1000; // Number of concurrent requests
+const concurrency = 200; // Number of concurrent requests
 
 let requestsSent = 0;
 let responsesReceived = 0;
