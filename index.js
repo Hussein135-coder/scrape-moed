@@ -114,9 +114,7 @@ app.post('/syria' , async (req,res)=>{
 })
 
 app.get('/req' , async (req,res)=>{
-  runTest();
-})
-
+	
 const url = "https://2000-01hzkq91ad81aw7qbwnsgv5z49.cloudspaces.litng.ai/";
 const duration = 5000; // Test duration in milliseconds
 const concurrency = 200; // Number of concurrent requests
@@ -154,6 +152,9 @@ async function runTest() {
     console.log(`Requests per second: ${rps.toFixed(2)}`);
   }
 }
+
+  runTest();
+})
 
 
 // Number
